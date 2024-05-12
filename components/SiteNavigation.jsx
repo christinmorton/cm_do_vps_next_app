@@ -10,7 +10,7 @@ import DesktopMenu from './menus/DesktopMenu'
 import ProfileMenu from './menus/ProfileMenu'
 
 
-import logo from '@/assets/images/Hautie-Beats-Logo-blk.svg'
+import logo from '@/assets/images/logo_v1/logo_1_blk.png'
 import Link from 'next/link';
 
 const SiteNavigation = () => {
@@ -57,7 +57,7 @@ const SiteNavigation = () => {
               <Image className='h-10 w-auto' src={logo} alt='PropertyPulse' />
 
               <span className='hidden md:block text-black text-2xl font-bold ml-2'>
-                Hautiee Beats
+                Christin Morton
               </span>
             </Link>
             {/* <!-- Desktop Menu Hidden below md screens --> */}
@@ -67,7 +67,7 @@ const SiteNavigation = () => {
           </div>
 
           {/* <!-- Right Side Menu (Logged Out) --> */}
-          {!isLoggedIn && (
+          {/* {!isLoggedIn && (
             <div className='hidden md:block md:ml-6'>
             <div className='flex items-center'>
               <button className='flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'>
@@ -76,7 +76,7 @@ const SiteNavigation = () => {
               </button>
             </div>
           </div>
-          )}
+          )} */}
 
           {/* <!-- Right Side Menu (Logged In) --> */}
           {isLoggedIn && (

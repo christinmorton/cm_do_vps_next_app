@@ -1,6 +1,5 @@
+import SiteNavigation from "@/components/SiteNavigation";
 import "./globals.css";
-
-import AuthProvider from "@/components/AuthProvider";
 
 export const metadata = {
   title: "Christin Morton",
@@ -9,10 +8,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <AuthProvider>
-      <html lang="en">
-        <body>{children}</body>
-      </html>
-    </AuthProvider>
+    <html lang="en">
+      <body>
+        <SiteNavigation />
+        {children}
+
+      </body>
+    </html>
   );
 }
