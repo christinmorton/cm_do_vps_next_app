@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import profilePic1 from "@/assets/images/optimized/IMG_1675.jpg"
 import profilePic2 from "@/assets/images/optimized/IMG_1679.jpg"
@@ -34,10 +35,24 @@ import aiArtPic5 from '@/assets/images/web_ready/DesktopSetup4.jpg'
 import aiArtPic6 from '@/assets/images/web_ready/DesktopSetup5_full.jpg'
 import aiArtPic7 from '@/assets/images/web_ready/DesktopSetup5.jpg'
 
+// import ModalWidget from "@/components/ModalWidget";
+import Dialog from "@/components/Dialog";
+
 export default async function Home() {
+
+  async function onClose () {
+    "use server"
+    console.log('modal has closed')
+  }
+  
+  async function onOkay () {
+    "use server"
+    console.log('Okay was clicked')
+  }
+
   return (
-    <main className="p-16">
-      <section>
+    <main className="p-16 overflow-hidden space-y-16">
+      <section className="flex flex-col ">
         <div>
           <Image src={characterPic1full} alt="stockPic1" height={200} />
           <h1>Elevate Your Online Presence</h1>
@@ -54,7 +69,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col md:flex-row items-center justify-around p-24 gap-12">
         <div>
           <h1>Do you need a website?</h1>
           <p>
@@ -64,7 +79,10 @@ export default async function Home() {
             we've got you covered. Let's discuss your vision and turn it into
             reality.
           </p>
-          <button>Lets talk</button>
+            <Link href={'/services?showWebsiteDialog=y'}>Hire me!</Link>
+            {/* <Dialog title="Website Development" onOkay={onOkay} onClose={onClose}>
+              <p>Hire me!</p>
+            </Dialog> */}
         </div>
 
         <div>
@@ -76,7 +94,7 @@ export default async function Home() {
             handle all aspects of development so you can focus on growing your
             business.
           </p>
-          <button>Get Started</button>
+          <Link href={'/services?showDevelopmentDialog=y'}>Hire me!</Link>
         </div>
 
         <div>
@@ -87,11 +105,11 @@ export default async function Home() {
             the latest trends, or want to optimize your existing website, we're
             here to help. Schedule a call with us today.
           </p>
-          <button>Call me</button>
+          <Link href={'/services?showConsultationDialog=y'}>Call me!</Link>
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col ">
         <Image src={aiArtPic4} alt="stockPic1" height={200} />
         <div>
           <h4>Simplified Website Development: </h4>
@@ -112,7 +130,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col ">
         <div>
           <p>
             Why Choose Our Simplified Website Development Services? Tailored
@@ -147,7 +165,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col ">
         <div>
         <Image src={characterPic3} alt="stockPic1" height={200} />
           <p>
@@ -181,7 +199,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col ">
         <h2>Portfolio</h2>
 
 
@@ -206,7 +224,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col ">
         <h4>Main call to action</h4>
 
         <h2>High-Converting Online Presence:</h2>
@@ -231,7 +249,7 @@ export default async function Home() {
       <section>
         <h4>Contact Us Today to Get Started! [Contact Us] Testimonials</h4>
 
-        <article>
+        <article className="flex flex-col ">
           <h4>Testimonials</h4>
           <div>
             <p>
@@ -251,7 +269,7 @@ export default async function Home() {
           </div>
         </article>
 
-        <article>
+        <article className="flex flex-col ">
           <h2>FAQs</h2>
           <div>
             <p>

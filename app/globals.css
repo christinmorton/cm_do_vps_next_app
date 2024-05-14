@@ -36,3 +36,5 @@ body {
 section {
   @apply flex flex-col place-content-center place-items-center my-16 space-y-8
 }
+
+

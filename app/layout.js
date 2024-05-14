@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
         <SiteNavigation />
         {children}
         <Footer />
+        {/* <div id="modal-root"></div> */}
       </body>
     </html>
   );
