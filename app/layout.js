@@ -1,5 +1,6 @@
 import SiteNavigation from "@/components/SiteNavigation";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Christin Morton",
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <SiteNavigation />
         {children}
-
+        <Footer />
       </body>
     </html>
   );
