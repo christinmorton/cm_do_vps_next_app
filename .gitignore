@@ -9,7 +9,7 @@
 .env
 .env.local
 
-/assets
+/assets/images
 
 # testing
 /coverage
