@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image'
+import Link from 'next/link';
 import { useState } from 'react';
 
 import { FaUser, FaGoogle } from "react-icons/fa";
@@ -11,7 +12,6 @@ import ProfileMenu from './menus/ProfileMenu'
 
 
 import logo from '@/assets/images/logo_v1/logo_1_blk.png'
-import Link from 'next/link';
 
 const SiteNavigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)

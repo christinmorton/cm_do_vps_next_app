@@ -1,10 +1,45 @@
 import Image from "next/image";
 
+import profilePic1 from "@/assets/images/optimized/IMG_1675.jpg"
+import profilePic2 from "@/assets/images/optimized/IMG_1679.jpg"
+
+import stockPic1 from '@/assets/images/web_ready_stock/pexels-pixabay-270408.jpg'
+import stockPic2 from '@/assets/images/web_ready_stock/pexels-pixabay-270404.jpg'
+import stockPic3 from '@/assets/images/web_ready_stock/pexels-neo-2653362.jpg'
+import stockPic4 from '@/assets/images/web_ready_stock/pexels-lukas-574073.jpg'
+import stockPic5 from '@/assets/images/web_ready_stock/pexels-lukas-574070.jpg'
+import stockPic6 from '@/assets/images/web_ready_stock/pexels-luis-gomes-546819.jpg'
+import stockPic7 from '@/assets/images/web_ready_stock/pexels-digital-buggu-374559.jpg'
+import stockPic8 from '@/assets/images/web_ready_stock/pexels-danny-meneses-943096.jpg'
+
+import characterPic1 from '@/assets/images/web_ready/BlkProgrammerArt2.png'
+import characterPic1full from '@/assets/images/web_ready/BlkProgrammerArt2.jpg'
+import characterPic2 from '@/assets/images/web_ready/BlkProgrammerArt3Trsp01.png'
+import characterPic3 from '@/assets/images/web_ready/BlkProgrammerTrsp01.png'
+
+import logoPic1blk from '@/assets/images/logo_v1/logo_1_blk.png'
+import logoPic1wht from '@/assets/images/logo_v1/logo_1_wht.png'
+import logoPic2blk from '@/assets/images/logo_v1/cm_logo_idea_2_blk.svg'
+import logoPic2wht from '@/assets/images/logo_v1/cm_logo_idea_2_wht.svg'
+import logoPic3blk from '@/assets/images/logo_v1/cm_logo_idea_4_blk.svg'
+import logoPic3wht from '@/assets/images/logo_v1/cm_logo_idea_4_wht.svg'
+import logoPic4blk from '@/assets/images/logo_v1/cm_logo_idea_5_blk.svg'
+import logoPic4wht from '@/assets/images/logo_v1/cm_logo_idea_5_wht.svg'
+
+import aiArtPic1 from '@/assets/images/web_ready/DesktopSetup1.jpg'
+import aiArtPic2 from '@/assets/images/web_ready/DesktopSetup2.jpg'
+import aiArtPic3 from '@/assets/images/web_ready/DesktopSetup3.jpg'
+import aiArtPic4 from '@/assets/images/web_ready/DesktopSetup4_16-9.jpg'
+import aiArtPic5 from '@/assets/images/web_ready/DesktopSetup4.jpg'
+import aiArtPic6 from '@/assets/images/web_ready/DesktopSetup5_full.jpg'
+import aiArtPic7 from '@/assets/images/web_ready/DesktopSetup5.jpg'
+
 export default async function Home() {
   return (
     <main className="p-16">
       <section>
         <div>
+          <Image src={characterPic1full} alt="stockPic1" height={200} />
           <h1>Elevate Your Online Presence</h1>
           <p>
             I simplify website development for ambitious entrepreneurs, so you
@@ -57,6 +92,7 @@ export default async function Home() {
       </section>
 
       <section>
+        <Image src={aiArtPic4} alt="stockPic1" height={200} />
         <div>
           <h4>Simplified Website Development: </h4>
           <p>
@@ -70,7 +106,10 @@ export default async function Home() {
           </p>
         </div>
 
-        <h4>I've got you covered!</h4>
+        <div>
+          <h4>I've got you covered!</h4>
+          <Image src={characterPic1} alt="stockPic1" height={200} />
+        </div>
       </section>
 
       <section>
@@ -80,6 +119,7 @@ export default async function Home() {
             Approach: I take the time to understand your business goals,
             ensuring your website aligns perfectly with your vision.
           </p>
+          
         </div>
 
         <div>
@@ -109,6 +149,7 @@ export default async function Home() {
 
       <section>
         <div>
+        <Image src={characterPic3} alt="stockPic1" height={200} />
           <p>
             What You'll Achieve High-Converting Website: A website designed to
             turn visitors into customers, boosting your sales and inquiries.
@@ -116,6 +157,7 @@ export default async function Home() {
         </div>
 
         <div>
+        <Image src={stockPic3} alt="stockPic1" height={200} />
           <p>
             Full Ownership & Control: Gain complete control over your online
             platform, eliminating dependency on third-party services.
@@ -123,6 +165,7 @@ export default async function Home() {
         </div>
 
         <div>
+        <Image src={stockPic4} alt="stockPic1" height={200} />
           <p>
             Time-Saving: Our streamlined process ensures efficient development,
             letting you focus on your business growth.
@@ -130,6 +173,7 @@ export default async function Home() {
         </div>
 
         <div>
+          <Image src={stockPic2} alt="stockPic1" height={200} />
           <p>
             Peace of Mind: With us, you'll have a reliable partner handling your
             website development, ensuring smooth operations and support.
@@ -140,22 +184,25 @@ export default async function Home() {
       <section>
         <h2>Portfolio</h2>
 
-        <div>
-          <h4>Image goes here</h4>
-          <h4>Website title/domain</h4>
-          <p>Project Description</p>
-        </div>
 
-        <div>
-          <h4>Image goes here</h4>
-          <h4>Website title/domain</h4>
-          <p>Project Description</p>
-        </div>
+        <div className="w-full min-h-[300px] flex flex-col md:flex-row place-content-center gap-12">
+          <div>
+            <h4>Image goes here</h4>
+            <h4>Website title/domain</h4>
+            <p>Project Description</p>
+          </div>
 
-        <div>
-          <h4>Image goes here</h4>
-          <h4>Website title/domain</h4>
-          <p>Project Description</p>
+          <div>
+            <h4>Image goes here</h4>
+            <h4>Website title/domain</h4>
+            <p>Project Description</p>
+          </div>
+
+          <div>
+            <h4>Image goes here</h4>
+            <h4>Website title/domain</h4>
+            <p>Project Description</p>
+          </div>
         </div>
       </section>
 
@@ -172,6 +219,8 @@ export default async function Home() {
           </p>
         </div>
 
+        <Image src={stockPic1} alt="stockPic1" height={300} />
+
         <p>
           I simplify website development for ambitious entrepreneurs, so you can
           establish a high-converting online presence without technical
@@ -182,7 +231,7 @@ export default async function Home() {
       <section>
         <h4>Contact Us Today to Get Started! [Contact Us] Testimonials</h4>
 
-        <section>
+        <article>
           <h4>Testimonials</h4>
           <div>
             <p>
@@ -200,9 +249,9 @@ export default async function Home() {
             </p>
             - <p>John Smith, CEO of XYZ Ventures</p>
           </div>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <h2>FAQs</h2>
           <div>
             <p>
@@ -227,28 +276,33 @@ export default async function Home() {
               remains updated and secure.
             </p>
           </div>
-        </section>
+        </article>
       </section>
 
       <section>
         <h2>Blog Post/Content I have created around the web!</h2>
 
-        <div>
-          <h4>Post title</h4>
-          <p>Post Description</p>
-          <p>Link to post...</p>
-        </div>
+        <div className="w-full min-h-[300px] flex flex-col md:flex-row place-content-center gap-12">
+          <div>
+            <Image src={aiArtPic1} alt="stockPic1" />
+            <h4>Post title</h4>
+            <p>Post Description</p>
+            <p>Link to post...</p>
+          </div>
 
-        <div>
-          <h4>Content title</h4>
-          <p>Content Description</p>
-          <p>Link to content...</p>
-        </div>
+          <div>
+          <Image src={aiArtPic2} alt="stockPic1" />
+            <h4>Content title</h4>
+            <p>Content Description</p>
+            <p>Link to content...</p>
+          </div>
 
-        <div>
-          <h4>Post title</h4>
-          <p>Project Description</p>
-          <p>Link to post...</p>
+          <div>
+          <Image src={aiArtPic3} alt="stockPic1" />
+            <h4>Post title</h4>
+            <p>Project Description</p>
+            <p>Link to post...</p>
+          </div>
         </div>
       </section>
     </main>
