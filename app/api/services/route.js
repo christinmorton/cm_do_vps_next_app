@@ -15,3 +15,23 @@ export async function GET () {
 
     return NextResponse.json(services, {status: 200});
 }
+
+
+export async function POST (request) {
+    const body = await request.json();
+
+    console.log(body);
+
+    // const response = await fetch('/api/contact', {
+    // method: 'POST',
+    // body: JSON.stringify(body)
+    // })
+    const timeout = 2000;
+
+    setTimeout(() => {
+        console.log('Saving data to the database...')
+    }, timeout);
+
+
+    return NextResponse.json('all good homie!', {status: 200});
+}

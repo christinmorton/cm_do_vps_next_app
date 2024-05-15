@@ -11,16 +11,23 @@ const ContactForm = async () => {
         // const form = e.currentTarget
         const formData = new FormData(form)
 
-        console.log('formData', formData)
-        console.log('formData:name', formData.get('name'))
-        console.log('formData:email', formData.get('email'))
-        console.log('formData:message', formData.get('message'))
-        // const response = await fetch('/api/contact', {
-        // method: 'POST',
-        // body: formData
-        // })
-        // if (response.ok) {
-        // form.reset()
+        // console.log('formData', formData)
+        // console.log('formData:name', formData.get('name'))
+        // console.log('formData:email', formData.get('email'))
+        // console.log('formData:message', formData.get('message'))
+        const response = await fetch('/api/services', {
+        method: 'POST',
+        body: JSON.stringify({
+            name: formData.get('name'),
+            email: formData.get('email'),
+            message: formData.get('message')
+        }),
+        })
+        if (response.ok) {
+          console.log('response', response)
+          console.log('response-body', JSON.parse(await response.text()))
+        form.reset()
+        }
         alert('Thanks for your message! We will get back to you soon.')
         // }
     }
