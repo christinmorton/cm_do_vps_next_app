@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import ModalWidget from "@/components/ModalWidget";
-
 import profilePic1 from "@/assets/images/optimized/IMG_1675.jpg"
 import profilePic2 from "@/assets/images/optimized/IMG_1679.jpg"
 
@@ -325,8 +323,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
-      <ModalWidget queryParam={'modalWidget'} />
     </main>
   );
 }

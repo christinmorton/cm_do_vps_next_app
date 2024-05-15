@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteNavigation from "@/components/SiteNavigation";
 import Footer from "@/components/Footer";
 import Modal from "@/components/Modal";
+import ModalWidget from "@/components/ModalWidget";
 
 export const metadata = {
   title: "Christin Morton",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <Modal />
+        <ModalWidget queryParam={'modalWidget'} />
       </body>
     </html>
   );
