@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import ModalWidget from "@/components/ModalWidget";
+
 import profilePic1 from "@/assets/images/optimized/IMG_1675.jpg"
 import profilePic2 from "@/assets/images/optimized/IMG_1679.jpg"
 
@@ -79,7 +81,7 @@ export default async function Home() {
             we've got you covered. Let's discuss your vision and turn it into
             reality.
           </p>
-            <Link href={'/services?showWebsiteDialog=y'}>Hire me!</Link>
+            <Link href={'/?modal=true'}>Hire me!</Link>
             {/* <Dialog title="Website Development" onOkay={onOkay} onClose={onClose}>
               <p>Hire me!</p>
             </Dialog> */}
@@ -94,7 +96,7 @@ export default async function Home() {
             handle all aspects of development so you can focus on growing your
             business.
           </p>
-          <Link href={'/services?showDevelopmentDialog=y'}>Hire me!</Link>
+          <Link href={'/?modalWidget=true'}>Hire me!</Link>
         </div>
 
         <div>
@@ -323,6 +325,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      <ModalWidget queryParam={'modalWidget'} />
     </main>
   );
 }

@@ -1,6 +1,9 @@
-import SiteNavigation from "@/components/SiteNavigation";
 import "./globals.css";
+
+
+import SiteNavigation from "@/components/SiteNavigation";
 import Footer from "@/components/Footer";
+import Modal from "@/components/Modal";
 
 export const metadata = {
   title: "Christin Morton",
@@ -14,7 +17,7 @@ export default function RootLayout({ children }) {
         <SiteNavigation />
         {children}
         <Footer />
-        {/* <div id="modal-root"></div> */}
+        <Modal />
       </body>
     </html>
   );
