@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Do you need a website?",
+      "description": "Take the hassle out of website development with my simplified approach. Whether you're a startup looking to establish your online presence or an established business aiming to revamp your website, we've got you covered. Let's discuss your vision and turn it into reality.",
+      "link": {
+        "text": "Hire me!",
+        "href": "/?modal=true"
+      }
+    },
+    {
+      "title": "Do you need a Dev?",
+      "description": "Leave the technical complexities to us. Our team of experienced developers specializes in turning your ideas into fully functional websites. From custom features to seamless user experiences, we'll handle all aspects of development so you can focus on growing your business.",
+      "link": {
+        "text": "Hire me!",
+        "href": "/?modalWidget=true"
+      }
+    },
+    {
+      "title": "Looking for advice?",
+      "description": "Get expert advice and guidance on all things web development. Whether you're stuck on a technical issue, need recommendations on the latest trends, or want to optimize your existing website, we're here to help. Schedule a call with us today.",
+      "link": {
+        "text": "Call me!",
+        "href": "/services?showConsultationDialog=y"
+      }
+    }
+  ]
+  
