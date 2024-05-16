@@ -33,5 +33,5 @@ export async function POST (request) {
     }, timeout);
 
 
-    return NextResponse.json('all good homie!', {status: 200});
+    return NextResponse.json('all good homie!', {status: 201});
 }
