@@ -6,9 +6,9 @@ import { useState } from 'react';
 
 import { FaUser, FaGoogle } from "react-icons/fa";
 
-import MobileMenu from './menus/MobileMenu'
-import DesktopMenu from './menus/DesktopMenu'
-import ProfileMenu from './menus/ProfileMenu'
+import MobileMenu from './Menus/MobileMenu'
+import DesktopMenu from './Menus/DesktopMenu'
+import ProfileMenu from './Menus/ProfileMenu'
 
 
 import logo from '@/assets/images/logo_v1/logo_1_blk.png'
