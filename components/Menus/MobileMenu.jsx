@@ -19,16 +19,16 @@ const MobileMenu = ({isloggedIn}) => {
             Home
           </Link>
           <Link
-            href='/shop'
-            className={`${pathname === '/shop' ? 'bg-black text-white' : 'text-black'} text-black block rounded-md px-3 py-2 text-base font-medium`}
+            href='/portfolio'
+            className={`${pathname === '/portfolio' ? 'bg-black text-white' : 'text-black'} text-black block rounded-md px-3 py-2 text-base font-medium`}
           >
-            Shop
+            Portfolio
           </Link>
           <Link
-            href='/cart'
-            className={`${pathname === '/cart' ? 'bg-black text-white' : 'text-black'} text-black block rounded-md px-3 py-2 text-base font-medium`}
+            href='/experience'
+            className={`${pathname === '/experience' ? 'bg-black text-white' : 'text-black'} text-black block rounded-md px-3 py-2 text-base font-medium`}
           >
-            Cart
+            Experience
           </Link>
           <Link
             href='/contact'

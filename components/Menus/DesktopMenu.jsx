@@ -15,16 +15,16 @@ const DesktopMenu = () => {
             Home
         </Link>
         <Link
-            href='/shop'
-            className={`${pathname === '/shop' ? 'bg-black text-white' : 'text-black'} hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+            href='/portfolio'
+            className={`${pathname === '/portfolio' ? 'bg-black text-white' : 'text-black'} hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
         >
-            Shop
+            Portfolio
         </Link>
         <Link
-            href='/cart'
-            className={`${pathname === '/cart' ? 'bg-black text-white' : 'text-black'} hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+            href='/experience'
+            className={`${pathname === '/experience' ? 'bg-black text-white' : 'text-black'} hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
         >
-            Cart
+            Experience
         </Link>
         <Link
             href='/contact'
