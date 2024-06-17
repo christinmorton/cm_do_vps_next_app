@@ -18,10 +18,10 @@ const BudgetTimelineForm = ({goToNextStep, goToPreviousStep, handleSubmit}) => {
     }}>
         <label for="budget">Budget Range:</label>
         <select id="budget" name="budget" required>
-            <option value="under1000">Under $1,000</option>
-            <option value="1000-5000">$1,000 - $5,000</option>
-            <option value="5000-10000">$5,000 - $10,000</option>
-            <option value="over10000">Over $10,000</option>
+            <option value="under $1000">Under $1,000</option>
+            <option value="$1000 - $5000">$1,000 - $5,000</option>
+            <option value="$5000 - $10,000">$5,000 - $10,000</option>
+            <option value="over $10,000">Over $10,000</option>
         </select>
 
         <h2>Desired Timeline</h2>

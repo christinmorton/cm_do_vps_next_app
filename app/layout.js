@@ -1,11 +1,15 @@
 import "./globals.css";
 
+import { Suspense } from "react";
 
 import SiteNavigation from "@/components/SiteNavigation";
 import Footer from "@/components/Footer";
 import Modal from "@/components/Modal";
-import ModalWidget from "@/components/ModalWidget";
-import { Suspense } from "react";
+import WebsiteServiceModal from "@/components/modals/WebsiteServiceModal";
+import DevServiceModal from "@/components/modals/DevServiceModal";
+import ConsultationServiceModal from "@/components/modals/ConsultationServiceModal";
+import ContactFormModal from "@/components/modals/ContactFormModal";
+
 
 export const metadata = {
   title: "Christin Morton",
@@ -22,10 +26,22 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <Suspense fallback={<div>Loading...</div>}>
-          <Modal />
+          <WebsiteServiceModal />
         </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
-          <ModalWidget queryParam={'modalWidget'} />
+          <DevServiceModal />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ConsultationServiceModal />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ContactFormModal />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ContactFormModal />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Modal />
         </Suspense>
       </body>
     </html>

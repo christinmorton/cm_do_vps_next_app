@@ -4,11 +4,11 @@
 import { useSearchParams, usePathname } from "next/navigation";
 import Link from "next/link";
 
-import ContactForm from "./Forms/ContactForm";
+import ContactForm from "../Forms/ContactForm";
 
-const ModalWidget = ({children, queryParam}) => {
+const ContactFormModal = ({children}) => {
   const searchParams = useSearchParams();
-  const modal = searchParams.get(queryParam);
+  const modal = searchParams.get('contact-form-modal');
   const pathname = usePathname();
   return (
     <>
@@ -33,4 +33,4 @@ const ModalWidget = ({children, queryParam}) => {
   )
 }
 
-export default ModalWidget
+export default ContactFormModal

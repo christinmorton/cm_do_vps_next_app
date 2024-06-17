@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import profilePic1 from "@/assets/images/optimized/IMG_1675.jpg"
 import profilePic2 from "@/assets/images/optimized/IMG_1679.jpg"
+import profilePic3 from '@/assets/images/optimized/IMG_0701_transparent-bg_2.png';
 
 import stockPic1 from '@/assets/images/web_ready_stock/pexels-pixabay-270408.jpg'
 import stockPic2 from '@/assets/images/web_ready_stock/pexels-pixabay-270404.jpg'
@@ -36,7 +37,7 @@ import aiArtPic6 from '@/assets/images/web_ready/DesktopSetup5_full.jpg'
 import aiArtPic7 from '@/assets/images/web_ready/DesktopSetup5.jpg'
 
 // import ModalWidget from "@/components/ModalWidget";
-import Dialog from "@/components/Dialog";
+// import Dialog from "@/components/Dialog";
 
 export default async function Home() {
 
@@ -54,7 +55,7 @@ export default async function Home() {
     <main className="p-16 overflow-hidden space-y-16">
       <section className="flex flex-col ">
         <div>
-          <Image src={characterPic1full} alt="stockPic1" height={200} />
+          <Image src={profilePic3} alt="stockPic1" height={200} />
           <h1>Elevate Your Online Presence</h1>
           <p>
             I simplify website development for ambitious entrepreneurs, so you
@@ -64,7 +65,7 @@ export default async function Home() {
 
           <div>
             <button>Book an appointment</button>
-            <button>Learn more</button>
+            {/* <button>Learn more</button> */}
           </div>
         </div>
       </section>
@@ -79,7 +80,7 @@ export default async function Home() {
             we've got you covered. Let's discuss your vision and turn it into
             reality.
           </p>
-            <Link href={'/?modal=true'}>Hire me!</Link>
+            <Link href={'/?website-service-modal=true'}>Hire me!</Link>
             {/* <Dialog title="Website Development" onOkay={onOkay} onClose={onClose}>
               <p>Hire me!</p>
             </Dialog> */}
@@ -90,11 +91,11 @@ export default async function Home() {
           <p>
             Leave the technical complexities to us. Our team of experienced
             developers specializes in turning your ideas into fully functional
-            websites. From custom features to seamless user experiences, we'll
+            websites. From custom features to seamless user experiences, I'll
             handle all aspects of development so you can focus on growing your
             business.
           </p>
-          <Link href={'/?modalWidget=true'}>Hire me!</Link>
+          <Link href={'/?dev-service-modal=true'}>Hire me!</Link>
         </div>
 
         <div>
@@ -102,10 +103,10 @@ export default async function Home() {
           <p>
             Get expert advice and guidance on all things web development.
             Whether you're stuck on a technical issue, need recommendations on
-            the latest trends, or want to optimize your existing website, we're
-            here to help. Schedule a call with us today.
+            the latest trends, or want to optimize your existing website, I am
+            here to help. Schedule a call with me today.
           </p>
-          <Link href={'/services?showConsultationDialog=y'}>Call me!</Link>
+          <Link href={'/?consultation-service-modal=true'}>Call me!</Link>
         </div>
       </section>
 
@@ -114,13 +115,13 @@ export default async function Home() {
         <div>
           <h4>Simplified Website Development: </h4>
           <p>
-            Your Path to a High-Converting Online Presence Are You an Ambitious
+            Your Path to a High-Converting Online Presence: Are You an Ambitious
             Entrepreneur Ready to Make Your Mark Online? Navigating the world of
             website development can be overwhelming. Technical jargon, countless
             options, and the fear of making the wrong choice can stall your
             dreams. But what if you could simplify the process and create a
             high-converting online presence without the headache? That's where
-            we come in!
+            I come in!
           </p>
         </div>
 
@@ -133,7 +134,7 @@ export default async function Home() {
       <section className="flex flex-col ">
         <div>
           <p>
-            Why Choose Our Simplified Website Development Services? Tailored
+            Why Choose My Simplified Website Development Services? Tailored
             Approach: I take the time to understand your business goals,
             ensuring your website aligns perfectly with your vision.
           </p>
@@ -142,15 +143,15 @@ export default async function Home() {
 
         <div>
           <p>
-            Expert Guidance: Say goodbye to technical overwhelm. Our seasoned
-            professionals handle all the complexities, letting you focus on what
+            Expert Guidance: Say goodbye to technical overwhelm. My seasoned
+            expertise handles all the complexities, letting you focus on what
             you do best – growing your business.
           </p>
         </div>
 
         <div>
           <p>
-            Quality Assurance: I pride ourselves on delivering high-quality,
+            Quality Assurance: I pride myself on delivering high-quality,
             professional websites that resonate with your target audience and
             drive results.
           </p>
@@ -158,7 +159,7 @@ export default async function Home() {
 
         <div>
           <p>
-            Our Offer to You I simplify website development for ambitious
+            My Offer to You: I simplify website development for ambitious
             entrepreneurs, so you can establish a high-converting online
             presence without technical overwhelm.
           </p>
@@ -246,6 +247,11 @@ export default async function Home() {
         </p>
       </section>
 
+      <section className="flex flex-col ">
+        <h4>Press the contact button</h4>
+        <Link href={'/?contact-form-modal=true'}>Contact me!</Link>
+      </section>
+
       <section>
         <h4>Contact Us Today to Get Started! [Contact Us] Testimonials</h4>
 
@@ -297,7 +303,7 @@ export default async function Home() {
         </article>
       </section>
 
-      <section>
+      {/* <section>
         <h2>Blog Post/Content I have created around the web!</h2>
 
         <div className="w-full min-h-[300px] flex flex-col md:flex-row place-content-center gap-12">
@@ -322,7 +328,7 @@ export default async function Home() {
             <p>Link to post...</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

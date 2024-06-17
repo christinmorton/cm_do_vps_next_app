@@ -4,14 +4,11 @@
 import { useSearchParams, usePathname } from "next/navigation";
 import Link from "next/link";
 
-import WebsiteServiceForm from "./Forms/WebsiteServiceForm";
+import WebsiteServiceForm from "../Forms/WebsiteServiceForm";
 
-// const ModalWidget = ({children, queryParam}) => {
-  // const modal = searchParams.get(queryParam);
-
-const Modal = () => {
+const WebsiteServiceModal = () => {
   const searchParams = useSearchParams();
-  const modal = searchParams.get("modal");
+  const modal = searchParams.get("website-service-modal");
   const pathname = usePathname();
   return (
     <>
@@ -36,4 +33,4 @@ const Modal = () => {
   )
 }
 
-export default Modal
+export default WebsiteServiceModal
